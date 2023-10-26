@@ -53,7 +53,7 @@ In this project, if you are using the Docker image to run 'PartMC-MOSAIC', you o
 In this section, you can learn about the preprocessing data, how to obtain it, and how to use it.
 
 ### 3.1 Introduction of pre-process scripts
-The preprocessing scripts are used to process the output data of 'PartMC-MOSAIC' in nc format to obtain the required information for the study. In this project, the main preprocessing script is the set of functions in ```NC_X.py```, which can output information such as individual particle Dc and Dp, mass of each component, and number concentration of black carbon particles. Since the individual particle Dc and Dp information is repeatedly used in this project and both 'Python' and 'MATLA'B are used for data processing and plotting, some data information is stored in CSV files to improve overall efficiency.
+The preprocessing scripts are used to process the output data of 'PartMC-MOSAIC' in nc format to obtain the required information for the study. In this project, the main preprocessing script is the set of functions in ```NC_X.py```, which can output information such as individual particle Dc and Dp, mass of each component, and number concentration of black carbon particles. Since the individual particle Dc and Dp information is repeatedly used in this project and both 'Python' and 'MATLAB' are used for data processing and plotting, some data information is stored in CSV files to improve overall efficiency.
 
 ### 3.2 How to get the pre-process data
 The ```Dp_Dc_Conc.csv``` file is obtained by running the Python script ```saveDcDpconc.py```.
@@ -75,9 +75,9 @@ You can learn about the instructions and usage of drawing and screen output scri
 
 ```Figure1_b.py```: The plot script of Figure 1b in the manuscript.
 
-```Figure2_ab.py```: The plot script of Figure 2 in the manuscript, need the file ```../Data/Dp_Dc_Conc.csv```.
+```Figure2_ab.py```: The plot script of Figure 2 in the manuscript, need the file ```'../Data/Dp_Dc_Conc.csv'```.
 
-```Figure3.py```: The plot script of Figure 3 in the manuscript; the output script of Table S7 in the SI, need the file ```../Data/MAC_MACE_Rabs_MACEX_ABC_time.csv```.
+```Figure3.py```: The plot script of Figure 3 in the manuscript; the output script of Table S7 in the SI, need the file ```'../Data/MAC_MACE_Rabs_MACEX_ABC_time.csv'```.
 
 ```Figure4_a.py```: The plot script of Figure 4a in the manuscript.
 
