@@ -6,7 +6,10 @@ This project is about the paper *"Steady Mixing State of Black Carbon Aerosols f
 This section presents the project structure as an unordered list and provides a brief explanation for each part. For detailed explanations of each file, please refer to the corresponding sections. For example, if you want to understand the description and usage of the ```Figure1_a.py``` script, you can refer to section 4 **The plot files of this project**.
 
 - **Project**: *the whole project*
-    - **sce11**: *the basic scenario*
+    - **sce11**
+    - **sce12**
+    - **...**    
+    - **sce22**: *the basic scenario*
         - **.dat**: *PartMC input file format*
         - **.spec**: *PartMC setup File*
         - **python**: *directory of Python scripts*
@@ -14,7 +17,6 @@ This section presents the project structure as an unordered list and provides a 
         - **Data**: *directory of pre-process data*
         - **out**: *directory of PartMC output*
         - **matlab**: *directory of matlab scripts*
-    - **sce12**
     - **...**
     - **sce33**
 
@@ -28,21 +30,20 @@ You can refer to http://lagrange.mechse.illinois.edu/partmc/ for the installatio
 ### 2.2 Introduction to .spec and .dat files
 The ```urban_plume.spec``` file specifies the running mode, total particle number, simulation duration, meteorological parameters, background field, emission sources, and atmospheric reaction processes for PartMC simulations. (For detailed information and explanations, please refer to http://lagrange.mechse.illinois.edu/partmc/partmc-2.6.1/doc/html/index.html )
 
-- Temperature data throughout the entire simulation process (input)
+- **Temperature data throughout the entire simulation process (input):** 
+```temp.dat```
 
-```temp.dat```: 
-- Pressure data throughout the entire simulation process (input)
+- **Pressure data throughout the entire simulation process (input):** 
+```pres.dat```
 
-```pres.dat```: 
-- Boundary layer height data throughout the entire simulation process (input)
+- **Boundary layer height data throughout the entire simulation process (input):** 
+```height.dat``` 
 
-```height.dat```: 
-- Emission and initial fields of aerosol species (input)
+- **Emission and initial fields of aerosol species (input):** 
+```aero_data.dat, aero_back.dat, aero_back_comp.dat, aero_back_dist.dat, aero_init_comp.dat, aero_init_dist.dat, aero_emit.dat, aero_emit_dist.dat, aero_emit_comp_BC.dat, aero_emit_comp_BCfree.dat, aero_emit_comp_mixBC.dat```:
 
-```aero_data.dat, aero_back.dat, aero_back_comp.dat, aero_back_dist.dat, aero_init_comp.dat, aero_init_dist.dat, aero_emit.dat, aero_emit_dist.dat, aero_emit_comp_BC.dat, aero_emit_comp_BCfree.dat, aero_emit_comp_mixBC.dat```: 
-- Emission and initial fields of gas species (input)
-
-```gas_data.dat, gas_init.dat, gas_back.dat, gas_emit.dat```: 
+- **Emission and initial fields of gas species (input):** 
+```gas_data.dat, gas_init.dat, gas_back.dat, gas_emit.dat```:
 
 
 ### 2.3 Running PartMC-MOSAIC
