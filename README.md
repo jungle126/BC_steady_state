@@ -68,7 +68,9 @@ The ```VF_massBC.csv``` file represents the volume fraction of black carbon comp
 ## 4. The plot and output files of this project
 You can learn about the instructions and usage of drawing and screen output scripts used in this project in this section. Please note that the drawing scripts in the python folder all use relative paths, so the python command needs to be run in their respective directories.
 
-```Figure1_a.py```: The plot script of Figure 1a in the manuscript.
+```NC_X.py```&```move.py```: Models needed to import 
+
+```Figure1_a.py```: The plot script of Figure 1a and Table S6 in the manuscript.
 
 ```Figure1_b.py```: The plot script of Figure 1b in the manuscript.
 
@@ -86,5 +88,14 @@ You can learn about the instructions and usage of drawing and screen output scri
 
 ``` Figure4_bc.m```: The plot script of Figure 4b and Figure 4c in the manuscript. This file need to input the value k according to the Figure 2a.
 
-```Figure S1```: The plot script of Figure S1 in the manuscript.
-```Figure S2```: The plot script of Figure S2 in the manuscript
+```Figure_S1.py```: The plot script of Figure S1 in the manuscript.
+
+```Figure_S2.py```: The plot script of Figure S2 in the manuscript.
+
+```print_50to90nm.py```: Print the number concentration fraction of BC particle (range from 50 to 90 nm).
+
+```print_meanCT.py```: Print the meanCT calculated by per-particle method, used to make a comparision with 1/k.
+
+
+
+
