@@ -50,7 +50,7 @@ The ```urban_plume.spec``` file specifies the running mode, total particle numbe
 In this project, if you are using the Docker image to run 'PartMC-MOSAIC', you only need to enter the command ```./run.sh``` to run it. If you have installed 'PartMC-MOSAIC' locally, you need to manually modify the PartMC-MOSAIC running command in the ```./run.sh``` file.
 ***
 ## 3. The pre-process data of this project
-In this section, you can learn about the preprocessing data, how to obtain it, and how to use it.
+In this section, you can learn about the preprocessing data, how to obtain it, and how to use it. Before running the Python script, make sure that the required libraries for the script are installed, otherwise errors may occur.
 
 ### 3.1 Introduction of pre-process scripts
 The preprocessing scripts are used to process the output data of 'PartMC-MOSAIC' in nc format to obtain the required information for the study. In this project, the main preprocessing script is the set of functions in ```NC_X.py```, which can output information such as individual particle Dc and Dp, mass of each component, and number concentration of black carbon particles. Since the individual particle Dc and Dp information is repeatedly used in this project and both 'Python' and 'MATLAB' are used for data processing and plotting, some data information is stored in CSV files to improve overall efficiency.
@@ -67,11 +67,11 @@ The ```VF_massBC.csv``` file represents the volume fraction of black carbon comp
 
 ***
 ## 4. The plot and output files of this project
-You can learn about the instructions and usage of drawing and screen output scripts used in this project in this section. Please note that the drawing scripts in the python folder all use relative paths, so the python command needs to be run in their respective directories.
+You can learn about the instructions and usage of drawing and screen output scripts used in this project in this section. Please note that the drawing scripts in the python folder all use relative paths, so the python command needs to be run in their respective directories. Before running the Python script, make sure that the required libraries for the script are installed, otherwise errors may occur.
 
 ```NC_X.py```&```move.py```: Models needed to import 
 
-```Figure1_a.py```: The plot script of Figure 1a and Table S6 in the manuscript.
+```Figure1_a.py```: The plot script of Figure 1a and Table S3 in the manuscript.
 
 ```Figure1_b.py```: The plot script of Figure 1b in the manuscript.
 
@@ -85,7 +85,7 @@ You can learn about the instructions and usage of drawing and screen output scri
 
 ```Valiadation.py```: The output script of Table S2 in the SI.
 
-```Eabs_Kvalue.m```: The output script of the value of MAC and E_{abs} in the Figure 3 and Table S2, need to use the value of k calculated by ```Figure2_ab.py```.
+```Eabs_Kvalue.m```: The output script of the value of MAC and E_{abs} in the Figure 3 and Table S7, need to use the value of k calculated by ```Figure2_ab.py```.
 
 ``` Figure4_bc.m```: The plot script of Figure 4b and Figure 4c in the manuscript. This file need to input the value k according to the Figure 2a.
 
